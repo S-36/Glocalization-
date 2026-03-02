@@ -1,0 +1,91 @@
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+        background-color: #e8f0ffea;
+    }
+    #map {
+        width: 1000px;
+        height: 800px;
+        border-radius: 20px;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .form-container {
+        height: 800px;
+        width: 400px;
+        border-radius: 20px;
+        background-color: #eafffd;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+    #description{
+        height: 100px;
+        resize: none;
+        overflow-y: auto;
+        word-wrap: break-word;
+    }
+    .label-input{
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #a8a8a841;
+        background-color: #d1ffff;
+    }
+    nav {
+    /* hacer que siga aun con scroll */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    z-index: 1000;
+    /* ajustar colores */
+    background-color: #3475ee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    }
+
+    nav a {
+    /* ajustar textos en nav */
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    }
+    nav a:hover{
+    color:rgb(123, 68, 145);
+    }
+
+    /* Locations Styles */
+    .locations{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+        height: fit-content;
+        width: 100%;
+        border-radius: 20px;
+
+        background-color: aqua;
+    }
+
+    .saved-locations{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+        height: fit-content;
+        width: 100%;
+        border-radius: 20px;
+
+        background-color: #d1ffff;
+    }

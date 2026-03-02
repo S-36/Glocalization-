@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save Location</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/7/74/Location_icon_from_Noun_Project.png">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Guardar direcciones</a>
+        <a href="locations.html">Ver direcciones guardadas</a>
+    </nav>
+    <h1>Save location</h1>
+    <div class="container">
+        <div class="map" id="map" onclick=""></div>
+        <div class="form-container">
+            <form class="form">
+                <h4>Coordenadas</h4>
+                <!-- Inputs para aguardar la ubicacion -->
+                <label class="label" for="latitude">Latitud:</label>
+                <input class="label-input" id="latitude" type="number" step="any" readonly>
+
+                <label class="label" for="longitude">Longitud:</label>
+                <input class="label-input" id="longitude" type="number" step="any" readonly>
+
+                <label class="label" for="description">Descripcion:</label>
+                <textarea class="label-input" rows="5" name="description" id="description" placeholder="Añade informacion adicional para una mejor ubicacion en el area, puntos claves etc..."></textarea>
+
+                <label class="label" for="photos">Fotos del lugar:</label>
+                <input class="label-input" type="file" id="photos" name="photos" multiple accept="image/*">
+
+                <a id="google-maps-link" href='' target="_blank">Ver ubicacion en Google Maps</a>
+                <h4>Deseas guardar esta ubicacion?</h4>
+
+                <button type="submit" onclick="saveLocation()">Guardar</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="crossorigin=""></script>
+    <script type="module" src="../scripts/indes.js"></script>
+</body>
+</html>
+
